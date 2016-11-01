@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   actions: {
     dateLookup() {
       var params = {
-        date1: this.get('date1'),
+        date: this.get('date'),
       };
       this.sendAction('dateLookup', params);
     }
