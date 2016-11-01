@@ -1,5 +1,23 @@
 <ol>
-  {{#each model as |bill|}}
+  <!-- {{#each model as |bill|}}
     <li> {{bill.last_version_on}} - {{bill.short_title}} URL: <a href= {{bill.urls.congress}}>{{bill.urls.congress}}</a> </li>
-  {{/each}}
+  {{/each}} -->
+
+  {{#each-in model as |pageIndex page|}}
+    <!-- {{log pageIndex}}
+    {{log page}} -->
+
+    {{#each-in page as |billIndex bill|}}
+      <!-- {{log billIndex}}
+      {{log bill}} -->
+
+      <!-- {{#each-in bill as |billKey value|}}
+        <li>{{billKey}}: {{value}}</li>
+      {{/each-in}} -->
+
+      <li>{{bill.official_title}}: {{bill.last_version_on}}</li>
+
+    {{/each-in}}
+
+  {{/each-in}}
 </ol>
