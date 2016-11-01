@@ -1,0 +1,10 @@
+<h1>Bill Search</h1>
+
+<form>
+  <div class="form-group">
+    <label for="date">Date</label>
+    {{input type=date value=date id="date"}}
+  </div>
+
+  <button class="btn btn-primary" {{action 'dateLookup'}}>Submit</button>
+</form>
