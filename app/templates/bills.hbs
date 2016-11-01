@@ -1,5 +1,5 @@
-<ul>
+<ol>
   {{#each model as |bill|}}
-    <li> {{bill.last_version_on}} - {{bill.short_title}} URL: {{bill.urls.congress}} </li>
+    <li> {{bill.last_version_on}} - {{bill.short_title}} URL: <a href= {{bill.urls.congress}}>{{bill.urls.congress}}</a> </li>
   {{/each}}
-</ul>
+</ol>

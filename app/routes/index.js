@@ -6,7 +6,7 @@ export default Ember.Route.extend({
       this.transitionTo('results', params.zip);
     },
     dateLookup(params) {
-      this.transitionTo('bills', params.date);
+      this.transitionTo('bills', params.date1);
     }
   }
 });
